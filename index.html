@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="whole">
+      <div class="cards-container">
+        <img class="card-back" src="./images/bg-card-back.png" />
+        <p class="cvc">000</p>
+        <img class="card-front" src="./images/bg-card-front.png" />
+
+        <div class="on-front-card">
+          <img class="logo" src="./images/card-logo.svg" />
+          <p class="number-on-card">0000 0000 0000 0000</p>
+          <div class="name-date-on-card">
+            <p class="name-on-card">Jane Appleseed</p>
+            <p class="date-on-card">
+              <span class="month-on-card">00</span>/<span class="year-on-card"
+                >00</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <p class="cardholder-name">cardholder name</p>
+        <input class="input input-name" placeholder="e.g Jane Appleseed" />
+        <span class="error-empty">Can't be empty</span>
+
+        <p class="card-number">Card Number</p>
+        <input class="input input-num" placeholder="e.g. 1234 5678 9123 0000" />
+        <span class="error-empty">Can't be empty</span>
+
+        <div class="date-cvc-boxes">
+          <div class="exp-date-box">
+            <p class="exp-date">Exp. Date (MM/YY)</p>
+
+            <div class="mm-yy">
+              <input class="month" placeholder="MM" />
+              <input class="year" placeholder="YY" />
+            </div>
+            <span class="error-empty">Can't be empty</span>
+          </div>
+
+          <div class="cvc-box">
+            <p class="cvc-input">CVC</p>
+            <input class="cvc-number" placeholder="e.g. 123" />
+            <span class="error-empty">Can't be empty</span>
+          </div>
+        </div>
+
+        <button class="confirm-btn">Confirm</button>
+      </div>
+      <!-- Completed state start -->
+
+      <div class="thanks-container">
+        <img class="icon-complete" src="./images/icon-complete.svg" />
+
+        <p class="thanku">Thank you!</p>
+        <p class="txt">We've added your card details</p>
+
+        <button class="continue-btn">Continue</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

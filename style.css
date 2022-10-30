@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Space Grotesk", sans-serif;
+  color: hsl(280, 5%, 35%);
+}
+
+.whole {
+  max-width: 37.5rem;
+  margin: 4rem auto;
+
+  background-image: url("./images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  padding: 1rem 2rem;
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  width: 30rem;
+}
+
+/*ON THE CARD*/
+
+.number-on-card {
+  font-size: 1.9rem;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+}
+.logo {
+  width: 5rem;
+}
+.name-on-card {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.date-on-card {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.name-date-on-card {
+  display: flex;
+  gap: 10rem;
+  color: #fff;
+
+  /* justify-content: space-between; */
+}
+
+.card-back {
+  position: relative;
+  left: 3rem;
+  top: 4rem;
+}
+.card-front {
+  position: absolute;
+  top: 18.5rem;
+}
+.on-front-card {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+  position: relative;
+  bottom: 1rem;
+  left: 2rem;
+}
+
+.cvc {
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: relative;
+  top: -5.5rem;
+  left: 26rem;
+  color: #fff;
+}
+
+/********INPUT SECTION*********/
+.cardholder-name,
+.card-number,
+.exp-date,
+.cvc-input {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cardholder-name {
+  margin-top: 5rem;
+}
+.card-number {
+  margin-top: 2rem;
+}
+
+.exp-date {
+  margin-top: 2rem;
+}
+
+.cvc-input {
+  margin-top: 2rem;
+}
+
+.confirm-btn {
+  margin-top: 3rem;
+  background-color: hsl(278, 68%, 11%);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.confirm-btn:hover {
+  background-color: hsl(278, 56%, 26%);
+  cursor: pointer;
+}
+
+input {
+  margin-top: 1rem;
+  border: none;
+  border: 1px solid hsl(279, 6%, 55%);
+  opacity: 70%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 0.8rem;
+}
+.input {
+  padding: 1rem;
+  width: 100%;
+}
+
+.date-cvc-boxes {
+  display: flex;
+  gap: 1rem;
+}
+
+.cvc-number {
+  padding: 1rem;
+  width: 100%;
+}
+.month {
+  padding: 1rem;
+}
+.mm-yy {
+  display: flex;
+  gap: 0.5rem;
+}
+.year {
+  padding: 1rem;
+  width: 50%;
+}
+
+.month {
+  width: 50%;
+}
+
+.exp-date-box {
+  width: 60%;
+}
+
+.continue-btn {
+  margin-top: 3rem;
+  background-color: hsl(278, 68%, 11%);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.continue-btn:hover {
+  background-color: hsl(278, 67%, 35%);
+  cursor: pointer;
+}
+
+.thanks-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  display: none;
+}
+
+.thanku {
+  font-size: 3rem;
+  text-align: center;
+}
+.txt {
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.icon-complete {
+  width: 8rem;
+  margin-left: 13rem;
+  margin-bottom: 1rem;
+}
+
+.error-red {
+  border-color: 1.5px solid hsl(0, 100%, 66%);
+}
+.error-empty {
+  display: none;
+}
+
+/***********************/
+
+@media (min-width: 1200px) {
+  .icon-complete {
+    position: relative;
+    top: 0rem;
+    left: -5rem;
+  }
+
+  .whole {
+    display: flex;
+    align-items: center;
+    gap: 45rem;
+    max-width: 1200px;
+    margin-top: 10rem;
+    background-image: none;
+  }
+
+  body {
+    max-width: 1300px;
+    background-image: url("./images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+  }
+  .card-front {
+    top: -15rem;
+    left: 22rem;
+    position: relative;
+  }
+
+  .on-front-card {
+    bottom: 29rem;
+    left: 25rem;
+  }
+
+  .card-back {
+    left: 28rem;
+    top: 23rem;
+  }
+
+  .cvc {
+    color: #fff;
+    font-size: 1.4rem;
+    left: 52rem;
+
+    top: 13.5rem;
+  }
+
+  .date-on-card {
+    position: absolute;
+    left: 20.5rem;
+  }
+
+  .name-date-on-card {
+    margin-top: 1rem;
+  }
+}
